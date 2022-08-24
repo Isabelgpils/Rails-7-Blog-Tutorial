@@ -1,0 +1,16 @@
+
+<div class="image-container">
+  <div class="heading-container">
+    <h1 class= "heading">Midwest Wildflowers</h1>
+  </div>
+</div>
+<div class=articles-container>
+  <h3>Articles</h3>
+  <% @articles.each do |article| %>
+    <ul>
+      <li><h4><%= article.title %></h4>
+        <p><%= article.body %></p>
+      </li>
+    </ul>
+  <% end %>
+</div>
