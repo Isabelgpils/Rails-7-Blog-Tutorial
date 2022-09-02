@@ -1,15 +1,15 @@
 <%= form_with model: article do |form| %>
   <div class="nudge-down-25">
     <%= form.label :title %><br>
-    <%= form.text_field :title, max: 100%>
+    <%= form.text_field :title, max: 100, size: 100  %>
     <% article.errors.full_messages_for(:title).each do |message| %>
       <div><%= message %></div>
     <% end %>
   </div>
 
   <div class="nudge-down-25">
-    <%= form.label :body %><br>
-    <%= form.text_area :body %><br>
+    <%= form.label "Article" %><br>
+    <%= form.text_area :body, cols: 75, rows: 15 %><br>
     <% article.errors.full_messages_for(:body).each do |message| %>
       <div><%= message %></div>
     <% end %>
