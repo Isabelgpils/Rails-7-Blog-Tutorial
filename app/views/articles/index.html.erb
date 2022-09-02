@@ -3,11 +3,11 @@
     <h1 class= "heading">Midwest Wildflowers</h1>
   </div>
   <div class= "articles-container">
-    <h3>September Articles</h3>
+    <h2>September Articles</h2>
     <ul>
       <% @articles.each do |article| %>
-        <li>
-          <%= link_to article.title, article %>
+        <li class= "article-list">
+          <h4 class="nudge-down-15 article-list"> <%= link_to article.title, article %></h4>
         </li>
       <% end %>
     </ul>
